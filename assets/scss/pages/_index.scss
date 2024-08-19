@@ -1,0 +1,304 @@
+.banner {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @include pad {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .banner-background {
+    height: 620px;
+    background-image: url("../assets/images/banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+
+    @include pad {
+      background-image: url("../assets/images/banner-sm.png");
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+    .banner-contain {
+      margin-left: 60px;
+      @include pad {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-bottom: 48px;
+      }
+    }
+  }
+}
+
+.hot {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @include pad {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .hot-list-item {
+    img {
+      border-radius: 20px 0px 20px 0px;
+      @include pad {
+        width: 100%;
+      }
+    }
+
+    .hot-list-text {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 3;
+    }
+  }
+}
+
+.featured {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @include pad {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .featured-btn-member {
+    top: -25%;
+    right: 0;
+  }
+}
+
+.mother-wrap {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @include pad {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .mother-activity {
+    margin-bottom: 20px;
+    color: #6e6b67;
+
+    @include pad {
+      margin-bottom: 12px;
+      color: #569573;
+    }
+  }
+
+  .mother-family {
+    margin-bottom: 20px;
+
+    @include pad {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.position-bg1 {
+  bottom: 0;
+  left: 0;
+}
+
+.position-bg2 {
+  bottom: 0;
+  right: 0;
+}
+
+.position-bg2-sm {
+  bottom: 0;
+  right: 0;
+}
+
+.everyone {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @include pad {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+.everyone-first-img {
+  border-radius: 20px 4px 4px 20px;
+}
+
+.everyone-last-img {
+  border-radius: 4px 20px 20px 4px;
+}
+
+.everyone-img {
+  border-radius: 4px;
+}
+
+.list-group-item.active {
+  color: #212529;
+  background-color: #e0efde;
+  border-color: transparent;
+}
+
+.list-group-item {
+  border: transparent;
+  border-radius: 0.375rem;
+  padding: 16px;
+}
+
+.newSwiper {
+  .swiper-slide {
+    height: auto;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 192px;
+    object-fit: cover;
+  }
+}
+
+.swiper-pagination {
+  text-align: left;
+  position: relative;
+}
+
+.swiper-navigation-hr,
+.mobileSwiper-navigation-hr {
+  position: relative;
+  width: 232px;
+
+  &::before {
+    content: "";
+    width: 80px;
+    height: 1px;
+    background: #6c757d;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.img-fluid-rwd {
+  max-width: 100%;
+  height: auto;
+  @include pad {
+    width: 100%;
+  }
+}
+
+.style-btn {
+  left: 16px;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.style-text {
+  bottom: 0;
+}
+
+.styleSwiper {
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.hot-hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 12px;
+  width: calc(100% - 24px);
+  height: 100%;
+  background-color: #212529;
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 2;
+}
+.hot-hover:hover::after {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.featured-hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #212529;
+  opacity: 0;
+  transition: opacity 0.3s;
+
+  z-index: 10;
+}
+.featured-hover:hover::after {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.life-hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #212529;
+  opacity: 0;
+  transition: opacity 0.3s;
+
+  z-index: 10;
+}
+
+.life-hover:hover::after {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.style-hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #212529;
+  opacity: 0;
+  transition: opacity 0.3s;
+
+  z-index: 0;
+}
+
+.style-hover:hover::after {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.every-hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #212529;
+  opacity: 0;
+  transition: opacity 0.3s;
+
+  z-index: 0;
+}
+
+.every-hover:hover::after {
+  opacity: 0.4;
+  cursor: pointer;
+}

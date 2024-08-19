@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+TC:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>註冊</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <section class="container">
+      <div class="row">
+        <div
+          class="col-md-6 mx-auto my-25 p-10 bg-white border border-primary-300 register-border-radius"
+        >
+          <form
+            class="border-bottom border-neutral-200 pb-13 register-border-text position-relative"
+            action="#"
+            method="post"
+          >
+            <h3 class="fw-bolder fs-6 letter-spacing-1 text-accent-200 mb-10">
+              註冊
+            </h3>
+            <div class="mb-4">
+              <label
+                for="registerInputAccount"
+                class="form-label fw-bold letter-spacing-1 text-neutral-500 mb-3 is-valid"
+                >會員帳號</label
+              >
+              <input
+                type="text"
+                class="form-control register-place py-3 px-4 bg-neutral-100"
+                id="registerInputAccount"
+                aria-describedby="accountHelp"
+                placeholder="請輸入會員帳號"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label
+                for="registerInputPassword"
+                class="form-label fw-bold letter-spacing-1 text-neutral-500 mb-3"
+                >密碼</label
+              >
+              <input
+                type="password"
+                class="form-control register-place py-3 px-4 bg-neutral-100"
+                id="registerInputPassword"
+                placeholder="請輸入密碼"
+                required
+              />
+            </div>
+            <div class="mb-10">
+              <label
+                for="registerInputEmail"
+                class="form-label fw-bold letter-spacing-1 text-neutral-500 mb-3"
+                >電子信箱</label
+              >
+              <input
+                type="email"
+                class="form-control register-place py-3 px-4 bg-neutral-100"
+                id="registerInputEmail"
+                placeholder="請輸入電子信箱"
+                required
+              />
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-accent-200 rounded-pill text-white py-4 px-6 w-100 letter-spacing-1"
+            >
+              立即註冊<i class="bi bi-arrow-right ms-3"></i>
+            </button>
+          </form>
+          <div class="mt-13 mb-10">
+            <div
+              class="d-flex align-items-center justify-content-center btn btn-neutral-100 rounded-pill py-3 mb-2"
+            >
+              <img src="../assets/images/icons-google.png" alt="google" />
+              <p class="ms-3 fw-bold letter-spacing-1" style="color: #52525b">
+                使用 Google 註冊
+              </p>
+            </div>
+            <div
+              class="d-flex align-items-center justify-content-center btn btn-neutral-100 rounded-pill py-3"
+            >
+              <img src="../assets/images/icons-facebook.png" alt="facebook" />
+              <p class="ms-3 fw-bold letter-spacing-1" style="color: #52525b">
+                使用 Facebook 註冊
+              </p>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <p class="fw-bold letter-spacing-05 me-3" style="color: #212121">
+              已經是會員了？
+            </p>
+            <a
+              href="login.html"
+              class="fw-bold letter-spacing-05 text-accent-200"
+              >點此登入</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <%- include('./layout/footer'); -%>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
