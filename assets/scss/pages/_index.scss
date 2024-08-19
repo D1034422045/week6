@@ -9,13 +9,13 @@
 
   .banner-background {
     height: 620px;
-    background-image: url("assets/images/banner.png");
+    background-image: url("../images/banner.png");
     background-size: cover;
     background-repeat: no-repeat;
     align-items: center;
 
     @include pad {
-      background-image: url("assets/images/banner-sm.png");
+      background-image: url("../images/banner-sm.png");
       justify-content: center;
       align-items: flex-end;
     }
