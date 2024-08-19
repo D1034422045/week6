@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+TC:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>關於我們</title>
+    <script type="module" crossorigin src="/week6/assets/main-6449b896.js"></script>
+    <link rel="stylesheet" href="/week6/assets/main-6d042d95.css">
+  </head>
+  <body>
+    <header class="header">
+  <nav class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex align-items-center nav-wrap nav-border-bottom">
+          <h1 class="me-9">
+            <a href="index.html" class="text-black">Vivre</a>
+          </h1>
+          <div class="position-relative d-none d-md-block">
+            <input
+              type="search"
+              placeholder="搜尋文章"
+              class="border-neutral-200 py-3 px-5 rounded-pill"
+            />
+            <i
+              class="bi bi-search position-absolute position-navicon text-accent-200"
+            ></i>
+          </div>
+
+          <div class="ms-auto d-md-block d-none">
+            <ul class="list-unstyled d-flex align-items-center py-2">
+              <li>
+                <a href="index.html" class="text-neutral-500 fw-bold py-2 px-5"
+                  >所有文章</a
+                >
+              </li>
+              <li class="ms-5">
+                <a
+                  href="subscription.html"
+                  class="text-neutral-500 fw-bold py-2 px-5"
+                  >訂閱方案</a
+                >
+              </li>
+              <li class="ms-5">
+                <a href="about.html" class="text-neutral-500 fw-bold py-2 px-5"
+                  >關於我們</a
+                >
+              </li>
+              <li class="ms-5">
+                <a
+                  href="login.html"
+                  class="text-white fw-bold btn btn-accent-200 rounded-pill py-4 px-5"
+                  >登入 / 註冊</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- modal 效果 -->
+          <!-- <a
+            href="#"
+            class="text-black d-inline-block d-md-none ms-auto"
+            data-bs-toggle="modal"
+            data-bs-target="#hamModal"
+            ><i class="bi bi-list fs-12"></i
+          ></a> -->
+
+          <!-- modal 的效果 -->
+          <!-- <div
+            class="modal fade"
+            id="hamModal"
+            tabindex="-1"
+            aria-labelledby="hamModal"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body d-flex flex-column">
+                  <button
+                    type="button"
+                    class="btn-close ms-auto mb-6"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                  <div class="mb-10">
+                    <div class="d-flex mb-6">
+                      <div class="position-relative w-100">
+                        <input
+                          type="search"
+                          placeholder="搜尋文章"
+                          class="border-neutral-200 py-3 px-5 rounded-pill w-100"
+                        />
+                        <i
+                          class="bi bi-search position-absolute position-navicon text-accent-200"
+                        ></i>
+                      </div>
+                    </div>
+                    <ul class="list-unstyled d-flex flex-column">
+                      <li class="mb-6">
+                        <a href="#" class="text-neutral-500 fw-bold p-3"
+                          >所有文章</a
+                        >
+                      </li>
+                      <li class="mb-6">
+                        <a href="#" class="text-neutral-500 fw-bold p-3"
+                          >訂閱方案</a
+                        >
+                      </li>
+                      <li class="">
+                        <a href="#" class="text-neutral-500 fw-bold p-3"
+                          >關於我們</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <a
+                    href="#"
+                    class="text-white fw-bold btn btn-accent-200 rounded-pill py-4 px-5"
+                    >登入 / 註冊</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- jquery 效果 -->
+          <a
+            href="#"
+            class="hamMenu text-black d-inline-block d-md-none ms-auto"
+            ><i class="bi bi-list fs-12"></i
+          ></a>
+        </div>
+
+        <!-- jquery 效果 -->
+        <div class="hamContent header-ham-jq pt-5 pb-10">
+          <div class="d-flex flex-column">
+            <button
+              type="button"
+              class="btn-close ms-auto mb-6"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="mb-10">
+              <div class="d-flex mb-6">
+                <div class="position-relative w-100">
+                  <input
+                    type="search"
+                    placeholder="搜尋文章"
+                    class="border-neutral-200 py-3 px-5 rounded-pill w-100"
+                  />
+                  <i
+                    class="bi bi-search position-absolute position-navicon text-accent-200"
+                  ></i>
+                </div>
+              </div>
+              <ul class="list-unstyled d-flex flex-column">
+                <li class="mb-6">
+                  <a href="index.html" class="text-neutral-500 fw-bold p-3"
+                    >所有文章</a
+                  >
+                </li>
+                <li class="mb-6">
+                  <a
+                    href="subscription.html"
+                    class="text-neutral-500 fw-bold p-3"
+                    >訂閱方案</a
+                  >
+                </li>
+                <li class="">
+                  <a href="about.html" class="text-neutral-500 fw-bold p-3"
+                    >關於我們</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <a
+              href="login.html"
+              class="text-white fw-bold btn btn-accent-200 rounded-pill py-4 px-5"
+              >登入 / 註冊</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <section class="container">
+      <section class="row">
+        <div class="col-12">
+          <picture>
+            <source
+              srcset="/week6/assets/about-banner-sm-d1d96208.png "
+              media="(max-width: 768px)"
+            />
+            <img
+              src="/week6/assets/about-banner-dc5219e2.png"
+              class="img-fluid-rwd"
+            />
+          </picture>
+        </div>
+      </section>
+    </section>
+
+    <section class="container">
+      <section class="row mt-20">
+        <div class="col-12">
+          <div>
+            <div class="mb-5">
+              <a
+                href="index.html"
+                class="fw-bold letter-spacing-05 text-neutral-400"
+                >首頁</a
+              ><span class="fw-bold text-neutral-400 mx-1">/</span>
+              <a href="#" class="fw-bold letter-spacing-05 text-accent-200"
+                >關於我們</a
+              >
+            </div>
+
+            <h3 class="fw-bolder fs-10 letter-spacing-1 text-neutral-500">
+              關於我們
+            </h3>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="container">
+      <section class="row py-20">
+        <div class="col-12">
+          <div class="row mb-15">
+            <div class="col-md-6">
+              <picture>
+                <source
+                  srcset="/week6/assets/about-1-sm-40459836.png "
+                  media="(max-width: 768px)"
+                />
+                <img src="/week6/assets/about-1-5ee8beda.png" class="img-fluid-rwd" />
+              </picture>
+            </div>
+            <div class="col-md-6">
+              <div class="px-10 mt-md-0 mt-6">
+                <div class="mb-9">
+                  <h4
+                    class="fw-bold fs-8 letter-spacing-1 text-neutral-600 mb-3"
+                  >
+                    Vivre
+                  </h4>
+                  <p
+                    class="fw-bold letter-spacing-05 text-neutral-400"
+                    style="line-height: 1.5"
+                  >
+                    vivre
+                    這個品牌名稱源自法語,意為"生活"、"活著"。它象徵著我們對於高品質生活的熱愛與追求。vivre
+                    旨在成為一個分享美好生活體驗、發掘生活質感的平台。
+                  </p>
+                </div>
+                <div>
+                  <h5 class="fw-bold letter-spacing-05 text-neutral-600 mb-3">
+                    我們的品牌價值
+                  </h5>
+                  <ul class="list-unstyled">
+                    <li class="fw-bold letter-spacing-05 text-neutral-400 mb-2">
+                      <i class="bi bi-dot text-neutral-400"></i>
+                      熱愛生活,好奇心永存
+                    </li>
+                    <li class="fw-bold letter-spacing-05 text-neutral-400 mb-2">
+                      <i class="bi bi-dot text-neutral-400"></i>
+                      品味獨具,講究生活質感
+                    </li>
+                    <li class="fw-bold letter-spacing-05 text-neutral-400 mb-2">
+                      <i class="bi bi-dot text-neutral-400"></i>
+                      分享真實生活,啟發生活靈感
+                    </li>
+                    <li class="fw-bold letter-spacing-05 text-neutral-400">
+                      <i class="bi bi-dot text-neutral-400"></i>
+                      推廣慢生活哲學,注重內在修為
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row d-flex flex-md-row flex-column flex-column-reverse">
+            <div class="col-md-6 mt-md-0 mt-6">
+              <div class="px-10">
+                <div class="mb-9">
+                  <h4
+                    class="fw-bold fs-8 letter-spacing-1 text-neutral-600 mb-9"
+                  >
+                    風格特色
+                  </h4>
+                  <p
+                    class="fw-bold letter-spacing-05 text-neutral-400 mb-9"
+                    style="line-height: 1.5"
+                  >
+                    vivre
+                    所展現的風格特色,可以用知性、親和、用心、優雅與獨特這些詞語來概括。我們講求內容的原創性與探索精神,不跟風追隨潮流話題,而是真誠分享獨特的生活視角與體驗。無論是旅行、美食、居家、時尚等生活領域,我們都希望能夠呈現出與眾不同、縝密入微、內外兼具的見解,給讀者帶來嶄新的感受和啟迪。
+                  </p>
+                  <p
+                    class="fw-bold letter-spacing-05 text-neutral-400"
+                    style="line-height: 1.5"
+                  >
+                    無論您是對美食、旅行、居家生活還是時尚風尚有獨到的見解和體會,只要切合vivre的價值理念與風格調性,我們都熱烈歡迎您加入這個平台,與我們一起分享和交流生活的點點滴滴。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <picture>
+                <source
+                  srcset="/week6/assets/about-2-sm-de4b8915.png "
+                  media="(max-width: 768px)"
+                />
+                <img src="/week6/assets/about-2-c5237b0a.png" class="img-fluid-rwd" />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="bg-primary-200">
+      <div class="container">
+        <div class="row py-md-20 py-10">
+          <div class="col-md-3">
+            <h3
+              class="fw-bolder fs-8 letter-spacing-1 text-neutral-500 text-md-start text-center mb-md-0 mb-6"
+            >
+              大事記
+            </h3>
+          </div>
+          <div class="col-md-9">
+            <ul class="list-unstyled">
+              <li
+                class="d-flex flex-md-row flex-column justify-content-start align-items-start mb-20"
+              >
+                <p
+                  class="bg-primary-400 text-white p-3 letter-spacing-1 me-18 mb-md-0 mb-6"
+                >
+                  2020
+                </p>
+                <div>
+                  <div
+                    class="d-flex justify-content-start align-items-center mb-6"
+                  >
+                    <p
+                      class="fw-bold fs-6 letter-spacing-1 text-neutral-400 me-md-4 me-3"
+                    >
+                      5<span
+                        class="fw-bold fs-4 letter-spacing-1 text-neutral-400"
+                        >月</span
+                      >
+                    </p>
+                    <p
+                      class="fw-bold letter-spacing-05 text-neutral-600 border-start border-neutral-300 ps-4"
+                    >
+                      創辦人茱麗葉、亞歷山大和幾個好友在巴黎開設 vivre
+                      生活部落格,紀錄分享他們對美好生活的想法和體驗。
+                    </p>
+                  </div>
+                  <div class="d-flex justify-content-start align-items-center">
+                    <p
+                      class="fw-bold fs-6 letter-spacing-1 text-neutral-400 me-md-4 me-3"
+                    >
+                      10<span
+                        class="fw-bold fs-4 letter-spacing-1 text-neutral-400"
+                        >月</span
+                      >
+                    </p>
+                    <p
+                      class="fw-bold letter-spacing-05 text-neutral-600 border-start border-neutral-300 ps-4"
+                    >
+                      部落格內容和讀者人數逐漸累積,決定成立 vivre
+                      品牌,開發更多元豐富的內容。
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="d-flex flex-md-row flex-column justify-content-start align-items-start mb-20"
+              >
+                <p
+                  class="bg-primary-400 text-white p-3 letter-spacing-1 me-18 mb-md-0 mb-6"
+                >
+                  2021
+                </p>
+                <div>
+                  <div
+                    class="d-flex justify-content-start align-items-center mb-6"
+                  >
+                    <p
+                      class="fw-bold fs-6 letter-spacing-1 text-neutral-400 me-md-4 me-3"
+                    >
+                      3<span
+                        class="fw-bold fs-4 letter-spacing-1 text-neutral-400"
+                        >月</span
+                      >
+                    </p>
+                    <p
+                      class="fw-bold letter-spacing-05 text-neutral-600 border-start border-neutral-300 ps-4"
+                    >
+                      vivre網站正式上線,除了原創文字內容,還加上了視訊、音訊等多媒體形式。
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex justify-content-start align-items-center mb-6"
+                  >
+                    <p
+                      class="fw-bold fs-6 letter-spacing-1 text-neutral-400 me-md-4 me-3"
+                    >
+                      7<span
+                        class="fw-bold fs-4 letter-spacing-1 text-neutral-400"
+                        >月</span
+                      >
+                    </p>
+                    <p
+                      class="fw-bold letter-spacing-05 text-neutral-600 border-start border-neutral-300 ps-4"
+                    >
+                      與法國本土品牌合作,推出 vivre
+                      首個自有產品線,包括家飾、餐飲用品等生活品味商品。
+                    </p>
+                  </div>
+                  <div class="d-flex justify-content-start align-items-center">
+                    <p
+                      class="fw-bold fs-6 letter-spacing-1 text-neutral-400 me-md-4 me-3"
+                    >
+                      12<span
+                        class="fw-bold fs-4 letter-spacing-1 text-neutral-400"
+                        >月</span
+                      >
+                    </p>
+                    <p
+                      class="fw-bold letter-spacing-05 text-neutral-600 border-start border-neutral-300 ps-4"
+                    >
+                      總瀏覽人次突破 100 萬大關,獲得實體出版社青睞,出版 vivre
+                      生活風格書籍。
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="d-flex flex-md-row flex-column justify-content-start align-items-start mb-20"
+              >
+                <p
+                  class="bg-primary-400 text-white p-3 letter-spacing-1 me-18 mb-md-0 mb-6"
+                >
+                  2022
+                </p>
+                <div>
+                  <div
+                    class="d-flex justify-content-start align-items-center mb-6"
+                  >
+                    <p
+                      class="fw-bold fs-6 letter-spacing-1 text-neutral-400 me-md-4 me-3"
+                    >
+                      3<span
+                        class="fw-bold fs-4 letter-spacing-1 text-neutral-400"
+                        >月</span
+                      >
+                    </p>
+                    <p
+                      class="fw-bold letter-spacing-05 text-neutral-600 border-start border-neutral-300 ps-4"
+                    >
+                      推出 vivre
+                      生活風格線上課程,聘請各領域專家開設有深度的付費課程。
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex justify-content-start align-items-center mb-6"
+                  >
+                    <p
+                      class="fw-bold fs-6 letter-spacing-1 text-neutral-400 me-md-4 me-3"
+                    >
+                      8<span
+                        class="fw-bold fs-4 letter-spacing-1 text-neutral-400"
+                        >月</span
+                      >
+                    </p>
+                    <p
+                      class="fw-bold letter-spacing-05 text-neutral-600 border-start border-neutral-300 ps-4"
+                    >
+                      vivre 舉辦首屆 vivre
+                      生活節,線上線下同步展開,現場湧入大批品牌粉絲朋友。
+                    </p>
+                  </div>
+                  <div class="d-flex justify-content-start align-items-center">
+                    <p
+                      class="fw-bold fs-6 letter-spacing-1 text-neutral-400 me-md-4 me-3"
+                    >
+                      10<span
+                        class="fw-bold fs-4 letter-spacing-1 text-neutral-400"
+                        >月</span
+                      >
+                    </p>
+                    <p
+                      class="fw-bold letter-spacing-05 text-neutral-600 border-start border-neutral-300 ps-4"
+                    >
+                      vivre 完成 A 輪融資,獲得知名風投資金青睞。
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li
+                class="d-flex flex-md-row flex-column justify-content-start align-items-start"
+              >
+                <p
+                  class="bg-primary-400 text-white p-3 letter-spacing-1 me-18 mb-md-0 mb-6"
+                >
+                  2023
+                </p>
+                <div>
+                  <div
+                    class="d-flex justify-content-start align-items-center mb-6"
+                  >
+                    <p
+                      class="fw-bold fs-6 letter-spacing-1 text-neutral-400 me-md-4 me-3"
+                    >
+                      1<span
+                        class="fw-bold fs-4 letter-spacing-1 text-neutral-400"
+                        >月</span
+                      >
+                    </p>
+                    <p
+                      class="fw-bold letter-spacing-05 text-neutral-600 border-start border-neutral-300 ps-4"
+                    >
+                      vivre 宣布品牌願景"探索更美好的生活",並推出全新視覺形象。
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex justify-content-start align-items-center mb-6"
+                  >
+                    <p
+                      class="fw-bold fs-6 letter-spacing-1 text-neutral-400 me-md-4 me-3"
+                    >
+                      5<span
+                        class="fw-bold fs-4 letter-spacing-1 text-neutral-400"
+                        >月</span
+                      >
+                    </p>
+                    <p
+                      class="fw-bold letter-spacing-05 text-neutral-600 border-start border-neutral-300 ps-4"
+                    >
+                      正式推出付費訂閱會員服務,提供高階獨家內容和會員優惠。
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex justify-content-start align-items-center mb-6"
+                  >
+                    <p
+                      class="fw-bold fs-6 letter-spacing-1 text-neutral-400 me-md-4 me-3"
+                    >
+                      9<span
+                        class="fw-bold fs-4 letter-spacing-1 text-neutral-400"
+                        >月</span
+                      >
+                    </p>
+                    <p
+                      class="fw-bold letter-spacing-05 text-neutral-600 border-start border-neutral-300 ps-4"
+                    >
+                      首次評選年度" vivre
+                      生活風格大獎",表彰在各領域具有開創性的人物及品牌。
+                    </p>
+                  </div>
+                  <div class="d-flex justify-content-start align-items-center">
+                    <p
+                      class="fw-bold fs-6 letter-spacing-1 text-neutral-400 me-md-4 me-3"
+                    >
+                      11<span
+                        class="fw-bold fs-4 letter-spacing-1 text-neutral-400"
+                        >月</span
+                      >
+                    </p>
+                    <p
+                      class="fw-bold letter-spacing-05 text-neutral-600 border-start border-neutral-300 ps-4"
+                    >
+                      首次登場的" vivre
+                      生活節沙龍"在全球主要城市同步舉行,線上線下吸引百萬人觀看。
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-md-20 py-10">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <h3
+            class="fw-bolder fs-8 letter-spacing-1 text-neutral-500 text-center mb-9"
+          >
+            品牌願景
+          </h3>
+          <p class="fw-bold letter-spacing-05 text-neutral-400 mb-9">
+            我們的目標不僅是為讀者提供高水準的內容，更希望能真正啟發和影響讀者的生活方式與價值觀,引領走向更有意義、品質與質感的生活體驗。我們相信,生活的意義不僅僅在於外在物質條件的滿足,更多的是一種心靈層面的追求,一種對美好事物的不懈向往。因此,vivre
+            的定位是成為啟迪現代人內在生活的引路人,給予靈感啟迪,引領讀者去體驗生活的真諦。
+          </p>
+          <p class="fw-bold letter-spacing-05 text-neutral-400">
+            我們衷心期盼，vivre
+            能為現代人的生活帶來無限靈感啟發,讓每個人的生活之路不僅優雅、從容,更有內在的意義與價值,豐富而燦爛。讓我們共同努力,將生活過得更有滋有味!期待您一同加入
+            vivre，攜手同行這段美妙的人生旅程。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 border-top border-neutral-300 py-6">
+        <p class="text-center fw-bold letter-spacing-05 text-primary-400">
+          ©Vivre 2024 All right Reserved
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>

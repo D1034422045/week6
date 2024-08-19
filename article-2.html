@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+TC:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>文章內容頁2</title>
+    <script type="module" crossorigin src="/week6/assets/main-6449b896.js"></script>
+    <link rel="stylesheet" href="/week6/assets/main-6d042d95.css">
+  </head>
+  <body>
+    <header class="header">
+  <nav class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex align-items-center nav-wrap nav-border-bottom">
+          <h1 class="me-9">
+            <a href="index.html" class="text-black">Vivre</a>
+          </h1>
+          <div class="position-relative d-none d-md-block">
+            <input
+              type="search"
+              placeholder="搜尋文章"
+              class="border-neutral-200 py-3 px-5 rounded-pill"
+            />
+            <i
+              class="bi bi-search position-absolute position-navicon text-accent-200"
+            ></i>
+          </div>
+
+          <div class="ms-auto d-md-block d-none">
+            <ul class="list-unstyled d-flex align-items-center py-2">
+              <li>
+                <a href="index.html" class="text-neutral-500 fw-bold py-2 px-5"
+                  >所有文章</a
+                >
+              </li>
+              <li class="ms-5">
+                <a
+                  href="subscription.html"
+                  class="text-neutral-500 fw-bold py-2 px-5"
+                  >訂閱方案</a
+                >
+              </li>
+              <li class="ms-5">
+                <a href="about.html" class="text-neutral-500 fw-bold py-2 px-5"
+                  >關於我們</a
+                >
+              </li>
+              <li class="ms-5">
+                <a
+                  href="login.html"
+                  class="text-white fw-bold btn btn-accent-200 rounded-pill py-4 px-5"
+                  >登入 / 註冊</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- modal 效果 -->
+          <!-- <a
+            href="#"
+            class="text-black d-inline-block d-md-none ms-auto"
+            data-bs-toggle="modal"
+            data-bs-target="#hamModal"
+            ><i class="bi bi-list fs-12"></i
+          ></a> -->
+
+          <!-- modal 的效果 -->
+          <!-- <div
+            class="modal fade"
+            id="hamModal"
+            tabindex="-1"
+            aria-labelledby="hamModal"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body d-flex flex-column">
+                  <button
+                    type="button"
+                    class="btn-close ms-auto mb-6"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                  <div class="mb-10">
+                    <div class="d-flex mb-6">
+                      <div class="position-relative w-100">
+                        <input
+                          type="search"
+                          placeholder="搜尋文章"
+                          class="border-neutral-200 py-3 px-5 rounded-pill w-100"
+                        />
+                        <i
+                          class="bi bi-search position-absolute position-navicon text-accent-200"
+                        ></i>
+                      </div>
+                    </div>
+                    <ul class="list-unstyled d-flex flex-column">
+                      <li class="mb-6">
+                        <a href="#" class="text-neutral-500 fw-bold p-3"
+                          >所有文章</a
+                        >
+                      </li>
+                      <li class="mb-6">
+                        <a href="#" class="text-neutral-500 fw-bold p-3"
+                          >訂閱方案</a
+                        >
+                      </li>
+                      <li class="">
+                        <a href="#" class="text-neutral-500 fw-bold p-3"
+                          >關於我們</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <a
+                    href="#"
+                    class="text-white fw-bold btn btn-accent-200 rounded-pill py-4 px-5"
+                    >登入 / 註冊</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- jquery 效果 -->
+          <a
+            href="#"
+            class="hamMenu text-black d-inline-block d-md-none ms-auto"
+            ><i class="bi bi-list fs-12"></i
+          ></a>
+        </div>
+
+        <!-- jquery 效果 -->
+        <div class="hamContent header-ham-jq pt-5 pb-10">
+          <div class="d-flex flex-column">
+            <button
+              type="button"
+              class="btn-close ms-auto mb-6"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="mb-10">
+              <div class="d-flex mb-6">
+                <div class="position-relative w-100">
+                  <input
+                    type="search"
+                    placeholder="搜尋文章"
+                    class="border-neutral-200 py-3 px-5 rounded-pill w-100"
+                  />
+                  <i
+                    class="bi bi-search position-absolute position-navicon text-accent-200"
+                  ></i>
+                </div>
+              </div>
+              <ul class="list-unstyled d-flex flex-column">
+                <li class="mb-6">
+                  <a href="index.html" class="text-neutral-500 fw-bold p-3"
+                    >所有文章</a
+                  >
+                </li>
+                <li class="mb-6">
+                  <a
+                    href="subscription.html"
+                    class="text-neutral-500 fw-bold p-3"
+                    >訂閱方案</a
+                  >
+                </li>
+                <li class="">
+                  <a href="about.html" class="text-neutral-500 fw-bold p-3"
+                    >關於我們</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <a
+              href="login.html"
+              class="text-white fw-bold btn btn-accent-200 rounded-pill py-4 px-5"
+              >登入 / 註冊</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <section class="article-banner container">
+      <div class="row">
+        <div class="col-12">
+          <picture>
+            <source
+              srcset="/week6/assets/article-banner-sm-e9da1f9f.png "
+              media="(max-width: 768px)"
+              width="100%"
+            />
+            <img src="/week6/assets/article-banner-2da53661.png" class="img-fluid" />
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-content container mb-25">
+      <div class="row">
+        <div class="col-md-8 mx-auto pt-20">
+          <div class="mb-5">
+            <a
+              href="index.html"
+              class="fw-bold letter-spacing-05 text-neutral-400"
+              >首頁</a
+            ><span class="fw-bold text-neutral-400 mx-1">/</span
+            ><a
+              href="index.html"
+              class="fw-bold letter-spacing-05 text-neutral-400"
+              >所有文章</a
+            ><span class="fw-bold text-neutral-400 mx-1">/</span
+            ><a href="#" class="fw-bold letter-spacing-05 text-accent-200"
+              >私人島嶼的露營奇遇記</a
+            >
+          </div>
+          <div class="mb-10">
+            <h3 class="fw-bolder fs-10 letter-spacing-1 text-neutral-500 mb-4">
+              私人島嶼的露營奇遇記
+            </h3>
+            <p class="fw-bold letter-spacing-1 text-neutral-300">
+              2024 / 5 / 1
+            </p>
+          </div>
+
+          <p class="fw-bold letter-spacing-05 text-neutral-500 mb-10">
+            嗨！我是秘境尋蹤小編
+            Elly，很高興能與你分享我這段令人心曠神怡的旅程。這不僅僅是一次旅行，更是一場對自然、對內心的深度體悟，一次重新與大自然連結的奇妙旅程。希望透過我的分享，你也能感受到這份自然之美，並找到一份屬於自己的心靈寧靜。
+          </p>
+          <p class="fw-bold letter-spacing-05 text-neutral-500 mb-10">
+            這段旅程的開始，是從一個遙遠的小島。我對於這片土地的認識，僅止於一些遊記和照片，對於它的神秘感與未知感讓我充滿了好奇。一艘小船，帶著我穿越海浪，穿過風暴，終於抵達了這片被大自然雕琢的寶地。當我踏上這片島嶼的那一刻，心中充滿了震撼與喜悅。
+          </p>
+          <div class="position-relative article-linear-gradient">
+            <picture class="">
+              <source
+                srcset="/week6/assets/content-1-sm-9961c35e.png "
+                media="(max-width: 768px)"
+                width="100%"
+              />
+              <img src="/week6/assets/content-1-b1d7a29a.png" class="img-fluid" />
+            </picture>
+          </div>
+
+          <div class="text-center mt-10">
+            <p
+              class="fw-bold letter-spacing-1 text-neutral-500 mb-4 d-md-block d-none"
+            >
+              本篇為會員專屬文章，馬上訂閱瀏覽所有內容！
+            </p>
+            <p
+              class="fw-bold letter-spacing-1 text-neutral-500 mb-1 d-md-none d-block"
+            >
+              本篇為會員專屬文章
+            </p>
+            <p
+              class="fw-bold letter-spacing-1 text-neutral-500 mb-3 d-md-none d-block"
+            >
+              馬上訂閱瀏覽所有內容！
+            </p>
+            <a
+              href="login.html"
+              class="btn btn-accent-200 rounded-pill text-white py-4 px-6"
+              >我要訂閱<i class="bi bi-arrow-right ms-3"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="extend container mb-31">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <h3 class="fw-bolder fs-8 letter-spacing-1 text-neutral-500 mb-10">
+            延伸閱讀
+          </h3>
+          <ul class="list-unstyled d-md-block d-none">
+            <li class="row d-flex mb-16">
+              <div class="col-3">
+                <img
+                  src="/week6/assets/read-1-7447f302.png"
+                  alt="read-1"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-9 d-flex flex-column">
+                <div>
+                  <h4
+                    class="fw-bolder fs-5 letter-spacing-1 text-neutral-500 mb-2"
+                  >
+                    週末說走就走露營記
+                  </h4>
+                  <p class="fw-bold letter-spacing-05 text-neutral-400">
+                    遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜...
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="fw-bold fs-5 letter-spacing-1 text-accent-200 ms-auto mt-auto"
+                  >Read More</a
+                >
+              </div>
+            </li>
+            <li class="row d-flex mb-16">
+              <div class="col-3">
+                <img
+                  src="/week6/assets/read-2-9172e3e2.png"
+                  alt="read-2"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-9 d-flex flex-column">
+                <div>
+                  <h4
+                    class="fw-bolder fs-5 letter-spacing-1 text-neutral-500 mb-2"
+                  >
+                    城市野營日記
+                  </h4>
+                  <p class="fw-bold letter-spacing-05 text-neutral-400">
+                    終於!我實現了一個看似瘋狂的想法—在熟悉的城市裡野營一晚。說實話,一開始我也有點懷疑自己,畢竟眾目睽睽之下搭帳篷實在有點怪異。不過漸漸地,這股初時的侷促不...
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="fw-bold fs-5 letter-spacing-1 text-accent-200 ms-auto mt-auto"
+                  >Read More</a
+                >
+              </div>
+            </li>
+            <li class="row d-flex">
+              <div class="col-3">
+                <img
+                  src="/week6/assets/read-3-84996d96.png"
+                  alt="read-3"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-9 d-flex flex-column">
+                <div>
+                  <h4
+                    class="fw-bolder fs-5 letter-spacing-1 text-neutral-500 mb-2"
+                  >
+                    和寵物去露營 - 大自然之旅的雙倍體驗
+                  </h4>
+                  <p class="fw-bold letter-spacing-05 text-neutral-400">
+                    說實話,一開始我有點擔心帶著我的狗狗露營會不會太麻煩。畢竟要照顧牠的飲食起居,還得注意牠的安全。不過這次經驗讓我徹底改觀了!出發前,我特意為狗狗準備了適當...
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="fw-bold fs-5 letter-spacing-1 text-accent-200 ms-auto mt-auto"
+                  >Read More</a
+                >
+              </div>
+            </li>
+          </ul>
+          <div class="swiper articleExtendSwiper d-md-none d-block">
+            <!-- Additional required wrapper -->
+            <ul class="list-unstyled swiper-wrapper">
+              <!-- Slides -->
+              <li class="swiper-slide">
+                <img
+                  src="/week6/assets/read-1-sm-01407a34.png"
+                  alt="read-1-sm"
+                  class="img-fluid-rwd"
+                />
+                <div class="d-flex flex-column">
+                  <h3
+                    class="fw-bolder fs-5 letter-spacing-1 text-neutral-500 mt-4 mb-2"
+                  >
+                    私人島嶼的露營奇遇記
+                  </h3>
+                  <p class="fw-bold letter-spacing-05 text-neutral-400 mb-3">
+                    遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜...
+                  </p>
+                  <a
+                    href="#"
+                    class="fw-bold fs-5 letter-spacing-1 text-accent-200 ms-auto"
+                    >Read More</a
+                  >
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img
+                  src="/week6/assets/read-2-sm-24c5fd2f.png"
+                  alt="read-2-sm"
+                  class="img-fluid-rwd"
+                />
+                <div class="d-flex flex-column">
+                  <h3
+                    class="fw-bolder fs-5 letter-spacing-1 text-neutral-500 mt-4 mb-2"
+                  >
+                    城市野營日記
+                  </h3>
+                  <p class="fw-bold letter-spacing-05 text-neutral-400 mb-3">
+                    終於!我實現了一個看似瘋狂的想法—在熟悉的城市裡野營一晚。說實話,一開始我也有點懷疑自己,畢竟眾目睽睽之下搭帳篷實在有點怪異。不過漸漸地,這股初時的侷促不安...
+                  </p>
+                  <a
+                    href="#"
+                    class="fw-bold fs-5 letter-spacing-1 text-accent-200 ms-auto"
+                    >Read More</a
+                  >
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img
+                  src="/week6/assets/read-3-sm-0df9b892.png"
+                  alt="read-3-sm"
+                  class="img-fluid-rwd"
+                />
+                <div class="d-flex flex-column">
+                  <h3
+                    class="fw-bolder fs-5 letter-spacing-1 text-neutral-500 mt-4 mb-2"
+                  >
+                    和寵物去露營 - 大自然之旅的...
+                  </h3>
+                  <p class="fw-bold letter-spacing-05 text-neutral-400 mb-3">
+                    說實話,一開始我有點擔心帶著我的狗狗露營會不會太麻煩。畢竟要照顧牠的飲食起居,還得注意牠的安全。不過這次經驗讓我徹底改觀了!出發前,我特意為狗狗準備了適當的...
+                  </p>
+                  <a
+                    href="#"
+                    class="fw-bold fs-5 letter-spacing-1 text-accent-200 ms-auto"
+                    >Read More</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 border-top border-neutral-300 py-6">
+        <p class="text-center fw-bold letter-spacing-05 text-primary-400">
+          ©Vivre 2024 All right Reserved
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>

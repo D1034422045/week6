@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+TC:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>訂閱</title>
+    <script type="module" crossorigin src="/week6/assets/main-6449b896.js"></script>
+    <link rel="stylesheet" href="/week6/assets/main-6d042d95.css">
+  </head>
+  <body>
+    <header class="header">
+  <nav class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex align-items-center nav-wrap nav-border-bottom">
+          <h1 class="me-9">
+            <a href="index.html" class="text-black">Vivre</a>
+          </h1>
+          <div class="position-relative d-none d-md-block">
+            <input
+              type="search"
+              placeholder="搜尋文章"
+              class="border-neutral-200 py-3 px-5 rounded-pill"
+            />
+            <i
+              class="bi bi-search position-absolute position-navicon text-accent-200"
+            ></i>
+          </div>
+
+          <div class="ms-auto d-md-block d-none">
+            <ul class="list-unstyled d-flex align-items-center py-2">
+              <li>
+                <a href="index.html" class="text-neutral-500 fw-bold py-2 px-5"
+                  >所有文章</a
+                >
+              </li>
+              <li class="ms-5">
+                <a
+                  href="subscription.html"
+                  class="text-neutral-500 fw-bold py-2 px-5"
+                  >訂閱方案</a
+                >
+              </li>
+              <li class="ms-5">
+                <a href="about.html" class="text-neutral-500 fw-bold py-2 px-5"
+                  >關於我們</a
+                >
+              </li>
+              <li class="ms-5">
+                <a
+                  href="login.html"
+                  class="text-white fw-bold btn btn-accent-200 rounded-pill py-4 px-5"
+                  >登入 / 註冊</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- modal 效果 -->
+          <!-- <a
+            href="#"
+            class="text-black d-inline-block d-md-none ms-auto"
+            data-bs-toggle="modal"
+            data-bs-target="#hamModal"
+            ><i class="bi bi-list fs-12"></i
+          ></a> -->
+
+          <!-- modal 的效果 -->
+          <!-- <div
+            class="modal fade"
+            id="hamModal"
+            tabindex="-1"
+            aria-labelledby="hamModal"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body d-flex flex-column">
+                  <button
+                    type="button"
+                    class="btn-close ms-auto mb-6"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                  <div class="mb-10">
+                    <div class="d-flex mb-6">
+                      <div class="position-relative w-100">
+                        <input
+                          type="search"
+                          placeholder="搜尋文章"
+                          class="border-neutral-200 py-3 px-5 rounded-pill w-100"
+                        />
+                        <i
+                          class="bi bi-search position-absolute position-navicon text-accent-200"
+                        ></i>
+                      </div>
+                    </div>
+                    <ul class="list-unstyled d-flex flex-column">
+                      <li class="mb-6">
+                        <a href="#" class="text-neutral-500 fw-bold p-3"
+                          >所有文章</a
+                        >
+                      </li>
+                      <li class="mb-6">
+                        <a href="#" class="text-neutral-500 fw-bold p-3"
+                          >訂閱方案</a
+                        >
+                      </li>
+                      <li class="">
+                        <a href="#" class="text-neutral-500 fw-bold p-3"
+                          >關於我們</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <a
+                    href="#"
+                    class="text-white fw-bold btn btn-accent-200 rounded-pill py-4 px-5"
+                    >登入 / 註冊</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- jquery 效果 -->
+          <a
+            href="#"
+            class="hamMenu text-black d-inline-block d-md-none ms-auto"
+            ><i class="bi bi-list fs-12"></i
+          ></a>
+        </div>
+
+        <!-- jquery 效果 -->
+        <div class="hamContent header-ham-jq pt-5 pb-10">
+          <div class="d-flex flex-column">
+            <button
+              type="button"
+              class="btn-close ms-auto mb-6"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="mb-10">
+              <div class="d-flex mb-6">
+                <div class="position-relative w-100">
+                  <input
+                    type="search"
+                    placeholder="搜尋文章"
+                    class="border-neutral-200 py-3 px-5 rounded-pill w-100"
+                  />
+                  <i
+                    class="bi bi-search position-absolute position-navicon text-accent-200"
+                  ></i>
+                </div>
+              </div>
+              <ul class="list-unstyled d-flex flex-column">
+                <li class="mb-6">
+                  <a href="index.html" class="text-neutral-500 fw-bold p-3"
+                    >所有文章</a
+                  >
+                </li>
+                <li class="mb-6">
+                  <a
+                    href="subscription.html"
+                    class="text-neutral-500 fw-bold p-3"
+                    >訂閱方案</a
+                  >
+                </li>
+                <li class="">
+                  <a href="about.html" class="text-neutral-500 fw-bold p-3"
+                    >關於我們</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <a
+              href="login.html"
+              class="text-white fw-bold btn btn-accent-200 rounded-pill py-4 px-5"
+              >登入 / 註冊</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <section class="container subscription py-25">
+      <div class="row">
+        <div class="col-12">
+          <div class="mb-15">
+            <div class="mb-5">
+              <a
+                href="./index.html"
+                class="fw-bold letter-spacing-05 text-neutral-400"
+                >首頁</a
+              ><span class="fw-bold text-neutral-400 mx-1">/</span
+              ><a href="#" class="fw-bold letter-spacing-05 text-accent-200"
+                >訂閱方案</a
+              >
+            </div>
+
+            <h3 class="fw-bolder fs-10 letter-spacing-1 text-neutral-500 mb-4">
+              訂閱方案
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center mb-10">
+        <div class="col-md-2 col-6">
+          <button
+            type="button"
+            class="btn btn-accent-200 rounded-0 text-white fw-bold letter-spacing-1 w-100 py-3"
+          >
+            年繳
+          </button>
+        </div>
+        <div class="col-md-2 col-6">
+          <button
+            type="button"
+            class="btn rounded-0 text-neutral-400 fw-bold letter-spacing-1 w-100 py-3"
+          >
+            月繳
+          </button>
+        </div>
+      </div>
+
+      <div class="row gy-5">
+        <div class="col-md-4">
+          <div
+            class="h-100 d-flex flex-column bg-white border border-primary-300 rounded-3 p-10"
+          >
+            <div
+              class="d-flex flex-column justify-content-center align-items-center mb-md-25 mb-9"
+            >
+              <p class="fw-bolder fs-5 letter-spacing-1 text-neutral-400 mb-4">
+                輕量型
+              </p>
+              <p class="fw-bold fs-10 letter-spacing-1 text-neutral-400">
+                NT 99<span
+                  class="fw-bolder fs-6 letter-spacing-1 text-neutral-400 ms-4"
+                  >/ 月</span
+                >
+              </p>
+            </div>
+
+            <ul class="list-unstyled mb-15">
+              <li class="d-flex align-items-center mb-6">
+                <i
+                  class="bi bi-check-square-fill text-neutral-400 fs-6 me-2"
+                ></i>
+                <p class="fw-bold fs-5 letter-spacing-1 text-neutral-400">
+                  每月最新文章無限閱讀
+                </p>
+              </li>
+              <li class="d-flex align-items-center mb-6">
+                <i
+                  class="bi bi-check-square-fill text-neutral-400 fs-6 me-2"
+                ></i>
+                <p class="fw-bold fs-5 letter-spacing-1 text-neutral-400">
+                  專屬會員限定內容
+                </p>
+              </li>
+              <li class="d-flex align-items-center">
+                <i
+                  class="bi bi-check-square-fill text-neutral-400 fs-6 me-2"
+                ></i>
+                <p class="fw-bold fs-5 letter-spacing-1 text-neutral-400">
+                  定期電子報
+                </p>
+              </li>
+            </ul>
+
+            <a
+              href="#"
+              class="btn btn-neutral-100 rounded-pill text-neutral-400 py-4 px-6 mt-auto"
+              >我要訂閱<i class="bi bi-arrow-right text-neutral-400 ms-3"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div
+            class="h-100 d-flex flex-column p-10 bg-white border border-primary-300 rounded-3"
+          >
+            <div
+              class="d-flex flex-column justify-content-center align-items-center mb-md-25 mb-9"
+            >
+              <p class="fw-bolder fs-5 letter-spacing-1 text-neutral-400 mb-4">
+                玩咖型
+              </p>
+              <p class="fw-bold fs-10 letter-spacing-1 text-neutral-400">
+                NT 159<span
+                  class="fw-bolder fs-6 letter-spacing-1 text-neutral-400 ms-4"
+                  >/ 月</span
+                >
+              </p>
+            </div>
+
+            <ul class="list-unstyled mb-15">
+              <li class="d-flex align-items-center mb-6">
+                <i
+                  class="bi bi-check-square-fill text-neutral-400 fs-6 me-2"
+                ></i>
+                <p class="fw-bold fs-5 letter-spacing-1 text-neutral-400">
+                  每月最新文章無限閱讀
+                </p>
+              </li>
+              <li class="d-flex align-items-center mb-6">
+                <i
+                  class="bi bi-check-square-fill text-neutral-400 fs-6 me-2"
+                ></i>
+                <p class="fw-bold fs-5 letter-spacing-1 text-neutral-400">
+                  專屬會員限定內容
+                </p>
+              </li>
+              <li class="d-flex align-items-center mb-6">
+                <i
+                  class="bi bi-check-square-fill text-neutral-400 fs-6 me-2"
+                ></i>
+                <p class="fw-bold fs-5 letter-spacing-1 text-neutral-400">
+                  定期電子報
+                </p>
+              </li>
+              <li class="d-flex align-items-center">
+                <i
+                  class="bi bi-check-square-fill text-neutral-400 fs-6 me-2"
+                ></i>
+                <p class="fw-bold fs-5 letter-spacing-1 text-neutral-400">
+                  年度精選禮物
+                </p>
+              </li>
+            </ul>
+
+            <a
+              href="#"
+              class="btn btn-neutral-100 rounded-pill text-neutral-400 py-4 px-6 mt-auto"
+              >我要訂閱<i class="bi bi-arrow-right text-neutral-400 ms-3"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div
+            class="h-100 d-flex flex-column p-10 bg-white border border-primary-300 rounded-3"
+          >
+            <div
+              class="d-flex flex-column justify-content-center align-items-center mb-md-25 mb-9"
+            >
+              <p class="fw-bolder fs-5 letter-spacing-1 text-neutral-400 mb-4">
+                家庭型
+              </p>
+              <p class="fw-bold fs-10 letter-spacing-1 text-accent-200 mb-4">
+                NT 599<span
+                  class="fw-bolder fs-6 letter-spacing-1 text-neutral-300 ms-4"
+                  >/ 月</span
+                >
+              </p>
+              <p
+                class="fw-bold fs-6 letter-spacing-1 text-neutral-300 text-decoration-line-through"
+              >
+                NT 899
+              </p>
+            </div>
+
+            <ul class="list-unstyled mb-15">
+              <li class="d-flex align-items-center mb-6">
+                <i
+                  class="bi bi-check-square-fill text-neutral-500 fs-6 me-2"
+                ></i>
+                <p class="fw-bold fs-5 letter-spacing-1 text-neutral-500">
+                  每月最新文章無限閱讀
+                </p>
+              </li>
+              <li class="d-flex align-items-center mb-6">
+                <i
+                  class="bi bi-check-square-fill text-neutral-500 fs-6 me-2"
+                ></i>
+                <p class="fw-bold fs-5 letter-spacing-1 text-neutral-500">
+                  專屬會員限定內容
+                </p>
+              </li>
+              <li class="d-flex align-items-center mb-6">
+                <i
+                  class="bi bi-check-square-fill text-neutral-500 fs-6 me-2"
+                ></i>
+                <p class="fw-bold fs-5 letter-spacing-1 text-neutral-500">
+                  定期電子報
+                </p>
+              </li>
+              <li class="d-flex align-items-center mb-6">
+                <i
+                  class="bi bi-check-square-fill text-neutral-500 fs-6 me-2"
+                ></i>
+                <p class="fw-bold fs-5 letter-spacing-1 text-neutral-500">
+                  年度精選禮物
+                </p>
+              </li>
+              <li class="d-flex align-items-center mb-6">
+                <i
+                  class="bi bi-check-square-fill text-neutral-500 fs-6 me-2"
+                ></i>
+                <p class="fw-bold fs-5 letter-spacing-1 text-neutral-500">
+                  24/7 優先客戶服務
+                </p>
+              </li>
+              <li class="d-flex align-items-center mb-6">
+                <i
+                  class="bi bi-check-square-fill text-neutral-500 fs-6 me-2"
+                ></i>
+                <p class="fw-bold fs-5 letter-spacing-1 text-neutral-500">
+                  為每個成員量身打造專屬行程
+                </p>
+              </li>
+              <li class="d-flex align-items-center">
+                <i
+                  class="bi bi-check-square-fill text-neutral-500 fs-6 me-2"
+                ></i>
+                <p class="fw-bold fs-5 letter-spacing-1 text-neutral-500">
+                  最多 5 個家庭成員共享
+                </p>
+              </li>
+            </ul>
+
+            <a
+              href="paymentform.html"
+              class="btn btn-accent-200 rounded-pill text-white py-4 px-6 mt-auto"
+              >我要訂閱<i class="bi bi-arrow-right text-white ms-3"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 border-top border-neutral-300 py-6">
+        <p class="text-center fw-bold letter-spacing-05 text-primary-400">
+          ©Vivre 2024 All right Reserved
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>
